@@ -40,7 +40,15 @@ int main()
 			sum += primes[++end];
 
 		else if (sum > N)
-			sum -= primes[start++];		
+		{
+			if (start == end)
+			{
+				sum = primes[++end];
+				++start;
+			}
+			else
+				sum -= primes[start++];	
+		}
 	}
 	
 	printf("%d", answer);
