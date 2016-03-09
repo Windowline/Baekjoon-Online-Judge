@@ -1,2 +1,0 @@
-# Baekjoon-Online-Judge
-Algorithm
