@@ -1,5 +1,5 @@
 package BJ;
-
+//https://www.acmicpc.net/problem/1389
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
