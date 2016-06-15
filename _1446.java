@@ -25,7 +25,7 @@ class info implements Comparable<info>
     }
 }
  
-public class _1466 
+public class _1446 
 {
     static int N,D;
     static List<info> a;
