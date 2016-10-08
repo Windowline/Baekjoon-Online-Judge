@@ -61,9 +61,9 @@ int main()
 			cin >> F[y][x];
 			if (F[y][x] != 0)
 			{
-				exY[y][F[y][x]] = true;
-				exX[x][F[y][x]] = true;
-				exF[y/3][x/3][F[y][x]] = true;
+				exY[y][F[y][x]] = true; //y행에 값 존재
+				exX[x][F[y][x]] = true; // x행에 값 존재
+				exF[y/3][x/3][F[y][x]] = true; //작은 칸[y/3][x/3]에 값 존재
 			}
 			else
 				pos.push_back(Pos(y, x));
