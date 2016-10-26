@@ -27,7 +27,6 @@ int minCnt(int i)
 		return 1;
 	if (dp[i] != -1)
 		return dp[i];
-
 	int ans = INF;
 	for (int k = i; k >= 0; k--)
 			if(check(k,i)==1)
@@ -40,6 +39,5 @@ int main()
 	scanf("%s", S);
 	memset(dp, -1, sizeof(dp));
 	printf("%d\n", minCnt(strlen(S) - 1));
-
 	return 0;
 }
