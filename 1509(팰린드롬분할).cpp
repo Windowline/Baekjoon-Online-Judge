@@ -21,8 +21,6 @@ int check(int i, int j)
 }
 int minCnt(int i)
 {
-	if (i < 0)
-		return 0;
 	if (i == 0)
 		return 1;
 	if (dp[i] != -1)
@@ -33,7 +31,6 @@ int minCnt(int i)
 				ans = min(ans, minCnt(k - 1));
 	return dp[i] = ans + 1;
 }
-
 int main()
 {
 	scanf("%s", S);
