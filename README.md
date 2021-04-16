@@ -11,7 +11,7 @@
 ## Installation
 
 ```
-pod 'VSMInterface', :tag => '1.7.11', :git => 'https://tde.sktelecom.com/stash/scm/tmapvsmsdk/vsm_sdk_ios.git'
+pod 'VSMInterface', :tag => '1.7.12', :git => 'https://tde.sktelecom.com/stash/scm/tmapvsmsdk/vsm_sdk_ios.git'
 ```
 
 ## Documents
