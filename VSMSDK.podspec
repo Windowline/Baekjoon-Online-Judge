@@ -4,8 +4,7 @@
 Pod::Spec.new do |s|
   s.name                  = "VSMSDK"
   s.version               = `git describe --tags`
-#  s.version               = "1.5.43"
-  s.license               = 'undefined'
+#  s.version               = "1.8.11"  s.license               = 'undefined'
   s.summary               = "VSMSDK"
   s.author                = { 
                               "hoyeon_lee" => "hoyeon_lee@sk.com"
