@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>VSMResourceLoaderDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Tmap VSM SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tmap Mobility</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/onResourceLoaderError:">- onResourceLoaderError:</option>
+		
+		<option value="//api/name/onResourceLoaderFinished">- onResourceLoaderFinished</option>
+		
+		<option value="//api/name/onResourceLoaderProgress:total:downloadedSize:totalSize:">- onResourceLoaderProgress:total:downloadedSize:totalSize:</option>
+		
+		<option value="//api/name/onResourceLoaderStart">- onResourceLoaderStart</option>
+		
+		<option value="//api/name/onResourceLoaderSuccess">- onResourceLoaderSuccess</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">VSMResourceLoaderDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>VSMResourceLoader.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="../Classes/VSMResourceLoader.html#//api/name/load">[VSMResourceLoader load]</a> 에 대한 Listener. VSM 내부의 thread에서 호출됩니다.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onResourceLoaderStart" title="onResourceLoaderStart"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onResourceLoaderStart">&ndash;&nbsp;onResourceLoaderStart</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resource 로딩을 시작한 경우 호출되는 callback</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onResourceLoaderStart</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMResourceLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onResourceLoaderProgress:total:downloadedSize:totalSize:" title="onResourceLoaderProgress:total:downloadedSize:totalSize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onResourceLoaderProgress:total:downloadedSize:totalSize:">&ndash;&nbsp;onResourceLoaderProgress:total:downloadedSize:totalSize:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resource 로딩 진행 상태를 위한 callback</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onResourceLoaderProgress:(NSUInteger)<em>count</em> total:(NSUInteger)<em>total</em> downloadedSize:(NSUInteger)<em>downloadedSize</em> totalSize:(NSUInteger)<em>totalSize</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>다운로드된 개수</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>total</code></th>
+						<td><p>다운로드할 전체 개수</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadedSize</code></th>
+						<td><p>다운로드된 사이즈(Byte)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>totalSize</code></th>
+						<td><p>다운로드할 전체 파일 사이즈(Byte)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMResourceLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onResourceLoaderSuccess" title="onResourceLoaderSuccess"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onResourceLoaderSuccess">&ndash;&nbsp;onResourceLoaderSuccess</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resource 로딩을 성공한 경우 호출되는 callback</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onResourceLoaderSuccess</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMResourceLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onResourceLoaderError:" title="onResourceLoaderError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onResourceLoaderError:">&ndash;&nbsp;onResourceLoaderError:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resource 로딩에 실패할 경우 호출되는 callback</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onResourceLoaderError:(NSInteger)<em>errorCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorCode</code></th>
+						<td><p>에러 코드는 다음과 같습니다</p>
+
+<ul>
+<li>HttpRequestError_COULDNT_RESOLVE_HOST = 6,</li>
+<li>HttpRequestError_COULDNT_CONNECT = 7,</li>
+<li>HttpRequestError_WRITE_ERROR = 23,</li>
+<li>HttpRequestError_OPERATION_TIMEDOUT = 28,</li>
+<li>HttpRequestError_SEND_ERROR = 55,</li>
+<li>HttpRequestError_RECV_ERROR = 56,</li>
+<li>100~600: Http Status</li>
+<li>HttpRequestError_UNKNOWN = 1000</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMResourceLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onResourceLoaderFinished" title="onResourceLoaderFinished"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onResourceLoaderFinished">&ndash;&nbsp;onResourceLoaderFinished</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resource 로딩 작업이 완료되었을 경우 호출되는 callback. 성공/실패 관계 없이 항상 호출됩니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onResourceLoaderFinished</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMResourceLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Tmap Mobility. All rights reserved. Updated: 2021-04-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

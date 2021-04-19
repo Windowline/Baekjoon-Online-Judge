@@ -1,0 +1,3267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>VSMMapView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Tmap VSM SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tmap Mobility</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/MapViewResizeDelegate">MapViewResizeDelegate</option>
+		
+		<option value="//api/name/buildingFilterMode">buildingFilterMode</option>
+		
+		<option value="//api/name/buildingHeight">buildingHeight</option>
+		
+		<option value="//api/name/currentHeight">currentHeight</option>
+		
+		<option value="//api/name/currentWidth">currentWidth</option>
+		
+		<option value="//api/name/enableBuildingPattern">enableBuildingPattern</option>
+		
+		<option value="//api/name/enableRenderRailroads">enableRenderRailroads</option>
+		
+		<option value="//api/name/enableRenderSubwayLines">enableRenderSubwayLines</option>
+		
+		<option value="//api/name/enableTouch">enableTouch</option>
+		
+		<option value="//api/name/mapDataDelegate">mapDataDelegate</option>
+		
+		<option value="//api/name/mapTouchDelegate">mapTouchDelegate</option>
+		
+		<option value="//api/name/maxZoomLevel">maxZoomLevel</option>
+		
+		<option value="//api/name/minZoomLevel">minZoomLevel</option>
+		
+		<option value="//api/name/oilType">oilType</option>
+		
+		<option value="//api/name/poiCaptionScale">poiCaptionScale</option>
+		
+		<option value="//api/name/poiIconScale">poiIconScale</option>
+		
+		<option value="//api/name/poiScaleChangeDelegate">poiScaleChangeDelegate</option>
+		
+		<option value="//api/name/renderTime">renderTime</option>
+		
+		<option value="//api/name/rotateAngle">rotateAngle</option>
+		
+		<option value="//api/name/screenCenter">screenCenter</option>
+		
+		<option value="//api/name/showAccidentInfo">showAccidentInfo</option>
+		
+		<option value="//api/name/showBuildingType">showBuildingType</option>
+		
+		<option value="//api/name/showPOI">showPOI</option>
+		
+		<option value="//api/name/showRoadNamePoi">showRoadNamePoi</option>
+		
+		<option value="//api/name/showRoadNamePoiOnRoute">showRoadNamePoiOnRoute</option>
+		
+		<option value="//api/name/showRoadNetworkLine">showRoadNetworkLine</option>
+		
+		<option value="//api/name/showRoadOutline">showRoadOutline</option>
+		
+		<option value="//api/name/showTrafficInfoOnMap">showTrafficInfoOnMap</option>
+		
+		<option value="//api/name/showsGPSAccuracyCircle">showsGPSAccuracyCircle</option>
+		
+		<option value="//api/name/tiltAngle">tiltAngle</option>
+		
+		<option value="//api/name/trackMode">trackMode</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/drawMBRAll:northeast:southwest:">- drawMBRAll:northeast:southwest:</option>
+		
+		<option value="//api/name/getMarkerManager">- getMarkerManager</option>
+		
+		<option value="//api/name/getZoomLevel:subLevel:">- getZoomLevel:subLevel:</option>
+		
+		<option value="//api/name/hitTest:block:">- hitTest:block:</option>
+		
+		<option value="//api/name/hitTest:y:block:">- hitTest:y:block:</option>
+		
+		<option value="//api/name/mapMoveToByScreen:screenY:isAnim:">- mapMoveToByScreen:screenY:isAnim:</option>
+		
+		<option value="//api/name/onHitObject:objectID:point:property:hitCallout:showCallout:">- onHitObject:objectID:point:property:hitCallout:showCallout:</option>
+		
+		<option value="//api/name/removeUserDefineCalloutPopups:">- removeUserDefineCalloutPopups:</option>
+		
+		<option value="//api/name/requestRender">- requestRender</option>
+		
+		<option value="//api/name/screenToWgs84:longitude:latitude:">- screenToWgs84:longitude:latitude:</option>
+		
+		<option value="//api/name/screenToWgs84:screenY:longitude:latitude:">- screenToWgs84:screenY:longitude:latitude:</option>
+		
+		<option value="//api/name/setMapCenter:latitude:isAnim:">- setMapCenter:latitude:isAnim:</option>
+		
+		<option value="//api/name/setMapCenter:screenY:isAnim:">- setMapCenter:screenY:isAnim:</option>
+		
+		<option value="//api/name/setMapViewLevel:isSmooth:">- setMapViewLevel:isSmooth:</option>
+		
+		<option value="//api/name/setRotateGesturesEnabled:">- setRotateGesturesEnabled:</option>
+		
+		<option value="//api/name/setRotationAngle:withAnimation:">- setRotationAngle:withAnimation:</option>
+		
+		<option value="//api/name/setRotationAngle:withRotationMode:">- setRotationAngle:withRotationMode:</option>
+		
+		<option value="//api/name/setScaleGesturesEnabled:">- setScaleGesturesEnabled:</option>
+		
+		<option value="//api/name/setScrollGesturesEnabled:">- setScrollGesturesEnabled:</option>
+		
+		<option value="//api/name/setTiltAngle:withAnimation:">- setTiltAngle:withAnimation:</option>
+		
+		<option value="//api/name/setTiltGesturesEnabled:">- setTiltGesturesEnabled:</option>
+		
+		<option value="//api/name/setZoomLevel:subLevel:animated:">- setZoomLevel:subLevel:animated:</option>
+		
+		<option value="//api/name/showUserDefineCalloutPopup:popupID:longitude:latitude:">- showUserDefineCalloutPopup:popupID:longitude:latitude:</option>
+		
+		<option value="//api/name/startSmoothZoom:">- startSmoothZoom:</option>
+		
+		<option value="//api/name/triggerRepaint">- triggerRepaint</option>
+		
+		<option value="//api/name/viewDidLoad">- viewDidLoad</option>
+		
+		<option value="//api/name/viewWillAppear">- viewWillAppear</option>
+		
+		<option value="//api/name/viewWillDisappear">- viewWillDisappear</option>
+		
+		<option value="//api/name/wgs84ToScreen:latitude:point:">- wgs84ToScreen:latitude:point:</option>
+		
+		<option value="//api/name/wgs84ToScreen:latitude:screenX:screenY:">- wgs84ToScreen:latitude:screenX:screenY:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">VSMMapView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/HitObjectNativeDelegate.html">HitObjectNativeDelegate</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>VSMMapView.h<br />VSMMapView.mm</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Map 출력을 담당하는 Class</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/MapViewResizeDelegate" title="MapViewResizeDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/MapViewResizeDelegate">&nbsp;&nbsp;MapViewResizeDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>화면 사이즈 변경 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (atomic, weak) id&lt;&gt; _Nullable MapViewResizeDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mapTouchDelegate" title="mapTouchDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mapTouchDelegate">&nbsp;&nbsp;mapTouchDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Touch 동작 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;MapTouchDelegate&gt; mapTouchDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mapDataDelegate" title="mapDataDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mapDataDelegate">&nbsp;&nbsp;mapDataDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map 관련 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;MapDataDelegate&gt; mapDataDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/poiScaleChangeDelegate" title="poiScaleChangeDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/poiScaleChangeDelegate">&nbsp;&nbsp;poiScaleChangeDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>POI Scale 변경 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;PoiScaleChangeDelegate&gt; poiScaleChangeDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tiltAngle" title="tiltAngle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tiltAngle">&nbsp;&nbsp;tiltAngle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map Title Angle</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=getTiltAngle) CGFloat tiltAngle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rotateAngle" title="rotateAngle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rotateAngle">&nbsp;&nbsp;rotateAngle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map Rotate Angle</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=getRotationAngle) CGFloat rotateAngle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackMode" title="trackMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackMode">&nbsp;&nbsp;trackMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map Move Mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MapTrackMode trackMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableTouch" title="enableTouch"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableTouch">&nbsp;&nbsp;enableTouch</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>터치 지원 여부 (default: YES)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool enableTouch</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showPOI" title="showPOI"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showPOI">&nbsp;&nbsp;showPOI</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>POI 출력 여부 (default: YES)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool showPOI</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildingHeight" title="buildingHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildingHeight">&nbsp;&nbsp;buildingHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>빌딩 출력 높이 (0.0 ~ 1.0)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float buildingHeight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableBuildingPattern" title="enableBuildingPattern"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableBuildingPattern">&nbsp;&nbsp;enableBuildingPattern</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Building Pattern 적용 여부 (default: NO)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool enableBuildingPattern</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableRenderSubwayLines" title="enableRenderSubwayLines"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableRenderSubwayLines">&nbsp;&nbsp;enableRenderSubwayLines</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>지하철 출력 여부 (default: YES)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool enableRenderSubwayLines</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableRenderRailroads" title="enableRenderRailroads"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableRenderRailroads">&nbsp;&nbsp;enableRenderRailroads</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>지하철/고속철도/경전철/일반철도/인천공항 노선 표출 출력 여부 (default: YES)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool enableRenderRailroads</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildingFilterMode" title="buildingFilterMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildingFilterMode">&nbsp;&nbsp;buildingFilterMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Building Filter 설정</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) VSMBuildingFilterMode buildingFilterMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showTrafficInfoOnMap" title="showTrafficInfoOnMap"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showTrafficInfoOnMap">&nbsp;&nbsp;showTrafficInfoOnMap</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Traffic Info 지도 에 출력</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool showTrafficInfoOnMap</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showAccidentInfo" title="showAccidentInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showAccidentInfo">&nbsp;&nbsp;showAccidentInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>유고/돌발 정보를 지도에 출력</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool showAccidentInfo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentWidth" title="currentWidth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentWidth">&nbsp;&nbsp;currentWidth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Screen width</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) GLint currentWidth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentHeight" title="currentHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentHeight">&nbsp;&nbsp;currentHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Screen height</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) GLint currentHeight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/screenCenter" title="screenCenter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/screenCenter">&nbsp;&nbsp;screenCenter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Screen에서 Position icon 이 출력될 center 영역 (0, 0) ~ (1, 1)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint screenCenter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/renderTime" title="renderTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/renderTime">&nbsp;&nbsp;renderTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Render millisecond time (default 30frame/1초)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger renderTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/poiCaptionScale" title="poiCaptionScale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/poiCaptionScale">&nbsp;&nbsp;poiCaptionScale</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Poi 텍스트 크기 비율. 기본값 1.25</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat poiCaptionScale</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/poiIconScale" title="poiIconScale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/poiIconScale">&nbsp;&nbsp;poiIconScale</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Poi 아이콘 크기 비율. 기본값 1.25</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat poiIconScale</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showRoadOutline" title="showRoadOutline"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showRoadOutline">&nbsp;&nbsp;showRoadOutline</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>도로 외곽선 출력 여부 (default: NO)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool showRoadOutline</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showRoadNamePoi" title="showRoadNamePoi"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showRoadNamePoi">&nbsp;&nbsp;showRoadNamePoi</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>도로명 POI 출력 여부 (default: NO)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool showRoadNamePoi</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showRoadNamePoiOnRoute" title="showRoadNamePoiOnRoute"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showRoadNamePoiOnRoute">&nbsp;&nbsp;showRoadNamePoiOnRoute</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>경로선 위 도로명 POI 출력 여부 (default: NO)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool showRoadNamePoiOnRoute</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showRoadNetworkLine" title="showRoadNetworkLine"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showRoadNetworkLine">&nbsp;&nbsp;showRoadNetworkLine</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>[Internal use only] 도로네트워크 출력 여부 (default: NO)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool showRoadNetworkLine</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/oilType" title="oilType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/oilType">&nbsp;&nbsp;oilType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>사용자 차량의 유종 타입. (휘발유:0, 디젤:1, LPG:2, 전기차:3, 고급휘발유:4)
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger oilType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showBuildingType" title="showBuildingType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showBuildingType">&nbsp;&nbsp;showBuildingType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>건물 출력 여부 (0: None, 1: 2D only, 2: 3D only, 3: 2D &amp; 3D)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BuildingShowType showBuildingType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minZoomLevel" title="minZoomLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minZoomLevel">&nbsp;&nbsp;minZoomLevel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>최소 zoom level</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=getMinZoomLevel) NSInteger minZoomLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxZoomLevel" title="maxZoomLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxZoomLevel">&nbsp;&nbsp;maxZoomLevel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>최대 zoom level</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=getMaxZoomLevel) NSInteger maxZoomLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UIView 의 viewDidLoad 함수</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewWillAppear" title="viewWillAppear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewWillAppear">&ndash;&nbsp;viewWillAppear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UIView 의 viewWillAppear 함수</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)viewWillAppear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewWillDisappear" title="viewWillDisappear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewWillDisappear">&ndash;&nbsp;viewWillDisappear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UIView 의 viewWillDisappear 함수</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)viewWillDisappear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMapViewLevel:isSmooth:" title="setMapViewLevel:isSmooth:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMapViewLevel:isSmooth:">&ndash;&nbsp;setMapViewLevel:isSmooth:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>MapView의 View Level을 지정한다.
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMapViewLevel:(NSInteger)<em>level</em> isSmooth:(BOOL)<em>isSmooth</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>level</code></th>
+						<td><p>지도 View Level 값.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isSmooth</code></th>
+						<td><p>지도의 View Level 변경시 Smooth 효과 지정 유무.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startSmoothZoom:" title="startSmoothZoom:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startSmoothZoom:">&ndash;&nbsp;startSmoothZoom:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>MapView의 View Level을 한단계 지정한다.
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startSmoothZoom:(MapViewLevelChangeType)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>level 설정 Type. (MapViewLevelChangeType)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getZoomLevel:subLevel:" title="getZoomLevel:subLevel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getZoomLevel:subLevel:">&ndash;&nbsp;getZoomLevel:subLevel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>Map에 설정된 Level을 리턴한다.
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getZoomLevel:(NSInteger *)<em>mainLevel</em> subLevel:(NSInteger *)<em>subLevel</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mainLevel</code></th>
+						<td><p>얻고자 하는 mainLevel</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>subLevel</code></th>
+						<td><p>얻고자 하는 subLevel (0 ~ 999)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setZoomLevel:subLevel:animated:" title="setZoomLevel:subLevel:animated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setZoomLevel:subLevel:animated:">&ndash;&nbsp;setZoomLevel:subLevel:animated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>Map Level을 설정한다.
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setZoomLevel:(NSInteger)<em>mainLevel</em> subLevel:(NSInteger)<em>subLevel</em> animated:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mainLevel</code></th>
+						<td><p>level</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>subLevel</code></th>
+						<td><p>subLevel (0~999)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>Level 변경시, animation 효과 적용 여부</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMapCenter:screenY:isAnim:" title="setMapCenter:screenY:isAnim:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMapCenter:screenY:isAnim:">&ndash;&nbsp;setMapCenter:screenY:isAnim:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>[deprecated] Map center를 설정한다.
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (bool)setMapCenter:(int)<em>screenX</em> screenY:(int)<em>screenY</em> isAnim:(bool)<em>isAnim</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenX</code></th>
+						<td><p>Map의 중심점이될 World X 좌표.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenY</code></th>
+						<td><p>Map의 중심점이될 World Y 좌표.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mapMoveToByScreen:screenY:isAnim:" title="mapMoveToByScreen:screenY:isAnim:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mapMoveToByScreen:screenY:isAnim:">&ndash;&nbsp;mapMoveToByScreen:screenY:isAnim:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>screen좌표 상의 world 좌표를 화면 중심으로 이동 시킨다.
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)mapMoveToByScreen:(NSInteger)<em>screenX</em> screenY:(NSInteger)<em>screenY</em> isAnim:(BOOL)<em>isAnim</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenX</code></th>
+						<td><p>Map의 중심점이될 World X 좌표.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenY</code></th>
+						<td><p>Map의 중심점이될 World Y 좌표.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMapCenter:latitude:isAnim:" title="setMapCenter:latitude:isAnim:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMapCenter:latitude:isAnim:">&ndash;&nbsp;setMapCenter:latitude:isAnim:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map의 중심점을 이동한다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (bool)setMapCenter:(double)<em>longitude</em> latitude:(double)<em>latitude</em> isAnim:(bool)<em>isAnim</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>longitude</code></th>
+						<td><p>Map의 중심점이될 longitude 좌표.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>latitude</code></th>
+						<td><p>Map의 중심점이될 latitude 좌표.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAnim</code></th>
+						<td><p>이동시 Animation 효과 여부.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>boolean 지동 이동 지정 성공 여부.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/wgs84ToScreen:latitude:screenX:screenY:" title="wgs84ToScreen:latitude:screenX:screenY:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/wgs84ToScreen:latitude:screenX:screenY:">&ndash;&nbsp;wgs84ToScreen:latitude:screenX:screenY:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>WGS84 좌표를 Screen 좌표로 변환한다. (Deprecated API)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (bool)wgs84ToScreen:(double)<em>longitude</em> latitude:(double)<em>latitude</em> screenX:(int *_Nonnull)<em>screenX</em> screenY:(int *_Nonnull)<em>screenY</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>longitude</code></th>
+						<td><p>longitude 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>latitude</code></th>
+						<td><p>latitude 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenX</code></th>
+						<td><p>screen X 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenY</code></th>
+						<td><p>screen Y 좌표</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>boolean 변환 성공 여부.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/wgs84ToScreen:latitude:point:" title="wgs84ToScreen:latitude:point:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/wgs84ToScreen:latitude:point:">&ndash;&nbsp;wgs84ToScreen:latitude:point:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>WGS84 좌표를 Screen 좌표로 변환한다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)wgs84ToScreen:(double)<em>longitude</em> latitude:(double)<em>latitude</em> point:(CGPoint *_Nonnull)<em>outPoint</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>longitude</code></th>
+						<td><p>longitude 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>latitude</code></th>
+						<td><p>latitude 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outPoint</code></th>
+						<td><p>위경도의 화면상 좌표(dp)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>boolean 변환 성공 여부.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/screenToWgs84:screenY:longitude:latitude:" title="screenToWgs84:screenY:longitude:latitude:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/screenToWgs84:screenY:longitude:latitude:">&ndash;&nbsp;screenToWgs84:screenY:longitude:latitude:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Screen 좌표를 WGS84 좌표로 변환한다. (Deprecated API)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (bool)screenToWgs84:(float)<em>screenX</em> screenY:(float)<em>screenY</em> longitude:(double *_Nonnull)<em>longitude</em> latitude:(double *_Nonnull)<em>latitude</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenX</code></th>
+						<td><p>screen X 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenY</code></th>
+						<td><p>screen Y 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>longitude</code></th>
+						<td><p>longitude 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>latitude</code></th>
+						<td><p>latitude 좌표</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>boolean 변환 성공 여부.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/screenToWgs84:longitude:latitude:" title="screenToWgs84:longitude:latitude:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/screenToWgs84:longitude:latitude:">&ndash;&nbsp;screenToWgs84:longitude:latitude:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Screen 좌표를 WGS84 좌표로 변환한다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)screenToWgs84:(CGPoint)<em>point</em> longitude:(double *_Nonnull)<em>longitude</em> latitude:(double *_Nonnull)<em>latitude</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>point</code></th>
+						<td><p>screen 좌표(dp)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>longitude</code></th>
+						<td><p>longitude 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>latitude</code></th>
+						<td><p>latitude 좌표</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>boolean 변환 성공 여부.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMarkerManager" title="getMarkerManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMarkerManager">&ndash;&nbsp;getMarkerManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>** Marker API 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (VSMMarkerManager *_Nonnull)getMarkerManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showUserDefineCalloutPopup:popupID:longitude:latitude:" title="showUserDefineCalloutPopup:popupID:longitude:latitude:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showUserDefineCalloutPopup:popupID:longitude:latitude:">&ndash;&nbsp;showUserDefineCalloutPopup:popupID:longitude:latitude:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>User define의 callout popup 을 출력한다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showUserDefineCalloutPopup:(NSString *)<em>popupText</em> popupID:(int)<em>popupID</em> longitude:(double)<em>longitude</em> latitude:(double)<em>latitude</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>popupText</code></th>
+						<td><p>출력할 문구</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>popupID</code></th>
+						<td><p>id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>longitude</code></th>
+						<td><p>longitude</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>latitude</code></th>
+						<td><p>latitude</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeUserDefineCalloutPopups:" title="removeUserDefineCalloutPopups:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeUserDefineCalloutPopups:">&ndash;&nbsp;removeUserDefineCalloutPopups:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>User define의 callout popup 을 제거한다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeUserDefineCalloutPopups:(bool)<em>isAnim</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAnim</code></th>
+						<td><p>Animation 적용 여부</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hitTest:y:block:" title="hitTest:y:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hitTest:y:block:">&ndash;&nbsp;hitTest:y:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hit test(deprecated API)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (bool)hitTest:(float)<em>screenPixelX</em> y:(float)<em>screenPixelY</em> block:(HitTestCompleteBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenPixelX</code></th>
+						<td><p>Hit test X 픽셀좌표(pixel)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenPixelY</code></th>
+						<td><p>Hit test Y 픽셀좌표(pixel)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Hit test 검출된 정보 전달 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hitTest:block:" title="hitTest:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hitTest:block:">&ndash;&nbsp;hitTest:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hit test</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (bool)hitTest:(CGPoint)<em>point</em> block:(HitTestCompleteBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>point</code></th>
+						<td><p>Hit test screen 좌표(dp)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Hit test 검출된 정보 전달 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScrollGesturesEnabled:" title="setScrollGesturesEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScrollGesturesEnabled:">&ndash;&nbsp;setScrollGesturesEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Scroll Gesture 사용 여부 설정</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScrollGesturesEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>scroll gesture 사용 여부</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRotateGesturesEnabled:" title="setRotateGesturesEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRotateGesturesEnabled:">&ndash;&nbsp;setRotateGesturesEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Rotate Gesture 사용 여부 설정</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRotateGesturesEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>rotate gesture 사용 여부</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTiltGesturesEnabled:" title="setTiltGesturesEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTiltGesturesEnabled:">&ndash;&nbsp;setTiltGesturesEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tilt Gesture 사용 여부 설정</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTiltGesturesEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>tilt gesture 사용 여부</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScaleGesturesEnabled:" title="setScaleGesturesEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScaleGesturesEnabled:">&ndash;&nbsp;setScaleGesturesEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Scale Gesture 사용 여부 설정</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScaleGesturesEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>scale gesture 사용 여부</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestRender" title="requestRender"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestRender">&ndash;&nbsp;requestRender</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>화면 갱신 요청</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestRender</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTiltAngle:withAnimation:" title="setTiltAngle:withAnimation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTiltAngle:withAnimation:">&ndash;&nbsp;setTiltAngle:withAnimation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>틸트 각도 변경.
+</code></pre>
+
+<p>0도일 경우 2D뷰를 바라본다. 축적별로 각도 제한이 존재하며 제한 각도 이상의 값을 설정하지 못한다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setTiltAngle:(CGFloat)<em>angle</em> withAnimation:(BOOL)<em>animation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>angle</code></th>
+						<td><p>Tilt(끄덕각)각도 지정, 최대 값을 넘길 경우 최대 각도로 설정 된다.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animation</code></th>
+						<td><p>애니메이션 사용 유무</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>뷰 핸들 객체가 유효하면 YES리턴.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRotationAngle:withAnimation:" title="setRotationAngle:withAnimation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRotationAngle:withAnimation:">&ndash;&nbsp;setRotationAngle:withAnimation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>회전 각도 변경
+0도이면 진북 방향을 바라본다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setRotationAngle:(CGFloat)<em>angle</em> withAnimation:(BOOL)<em>animation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>angle</code></th>
+						<td><p>변경하려는 회전 각도</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animation</code></th>
+						<td><p>애니메이션 사용 유무</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRotationAngle:withRotationMode:" title="setRotationAngle:withRotationMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRotationAngle:withRotationMode:">&ndash;&nbsp;setRotationAngle:withRotationMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>회전 각도 변경
+0도이면 진북 방향을 바라본다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setRotationAngle:(CGFloat)<em>angle</em> withRotationMode:(NSInteger)<em>rotationMode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>angle</code></th>
+						<td><p>변경하려는 회전 각도  (0도 ~ 360도)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rotationMode</code></th>
+						<td><p>회전 방식 ( 0: 회전 없이 바로 각도 설정, 1: 자동, 2: 강제로 시계방향(clock-wise)회전, 3: 강제로 반시계방향 회전(counter-clock-wise)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/drawMBRAll:northeast:southwest:" title="drawMBRAll:northeast:southwest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/drawMBRAll:northeast:southwest:">&ndash;&nbsp;drawMBRAll:northeast:southwest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>주어진 화면 영역에 지도의 bound가 들어오도록 한다.
+단, 지도에 tilt 및 rotation이 적용된 경우는 동작을 보장하지 않는다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)drawMBRAll:(CGRect)<em>screenRect</em> northeast:(VSMMapPoint *)<em>northeast</em> southwest:(VSMMapPoint *)<em>southwest</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenRect</code></th>
+						<td><p>화면 영역</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>northeast</code></th>
+						<td><p>bound의 북동쪽 위치</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>southwest</code></th>
+						<td><p>bound의 남서쪽 위치</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>성공 여부</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showsGPSAccuracyCircle" title="showsGPSAccuracyCircle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showsGPSAccuracyCircle">&nbsp;&nbsp;showsGPSAccuracyCircle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>GPS 정확도 원 표출 여부 (default: NO)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL showsGPSAccuracyCircle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/triggerRepaint" title="triggerRepaint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/triggerRepaint">&ndash;&nbsp;triggerRepaint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>다음 frame이 그려지도록 요청한다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)triggerRepaint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onHitObject:objectID:point:property:hitCallout:showCallout:" title="onHitObject:objectID:point:property:hitCallout:showCallout:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onHitObject:objectID:point:property:hitCallout:showCallout:">&ndash;&nbsp;onHitObject:objectID:point:property:hitCallout:showCallout:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hit Test 결과 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onHitObject:(HitObjectType)<em>type</em> objectID:(int)<em>objectID</em> point:(VSMMapPoint *)<em>point</em> property:(ObjectProperty *)<em>property</em> hitCallout:(bool)<em>hitCallout</em> showCallout:(bool *)<em>showCallout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectID</code></th>
+						<td><p>선택한 객체의 아이디</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>point</code></th>
+						<td><p>선택한 객체의 위경도 좌표
+@param property
+@param hitCallout
+@param showCallout</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Tmap Mobility. All rights reserved. Updated: 2021-04-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

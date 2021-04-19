@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>VSMConfigurationLoaderDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Tmap VSM SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tmap Mobility</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/onConfigurationLoaderError:">- onConfigurationLoaderError:</option>
+		
+		<option value="//api/name/onConfigurationLoaderSuccess:">- onConfigurationLoaderSuccess:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">VSMConfigurationLoaderDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>VSMConfigurationLoader.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>VSM <a href="../Classes/VSMConfigurationLoader.html#//api/name/load">[VSMConfigurationLoader load]</a> 에 대한 Listener. VSM 내부의 thread에서 호출됩니다.
+*</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onConfigurationLoaderSuccess:" title="onConfigurationLoaderSuccess:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onConfigurationLoaderSuccess:">&ndash;&nbsp;onConfigurationLoaderSuccess:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configuration을 정상적으로 로딩하였을 경우 <a href="../Classes/VSMConfiguration.html">VSMConfiguration</a> 객체를 전달합니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onConfigurationLoaderSuccess:(VSMConfiguration *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p><a href="../Classes/VSMConfiguration.html">VSMConfiguration</a> 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMConfigurationLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onConfigurationLoaderError:" title="onConfigurationLoaderError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onConfigurationLoaderError:">&ndash;&nbsp;onConfigurationLoaderError:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configuration을 정상적으로 로딩하지 못하였을 경우 errorCode를 전달합니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onConfigurationLoaderError:(int)<em>errorCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorCode</code></th>
+						<td><p>에러 코드는 다음과 같습니다.</p>
+
+<ul>
+<li>﻿LoaderErrorAppHttpClient = 100,</li>
+<li>LoaderErrorAppHttpServer,</li>
+<li>LoaderErrorAppParsing,</li>
+<li>LoaderErrorAppCouldNotResolveHost,</li>
+<li>LoaderErrorAppCouldNotConnect,</li>
+<li>LoaderErrorAppWriteError,</li>
+<li>LoaderErrorAppOperationTimedout,</li>
+<li>LoaderErrorAppSendError,</li>
+<li>LoaderErrorAppRecvError,</li>
+<li>LoaderErrorAppUnknown,</li>
+<li>LoaderErrorLayerHttpClient = 200,</li>
+<li>LoaderErrorLayerHttpServer,</li>
+<li>LoaderErrorLayerParsing,</li>
+<li>LoaderErrorLayerCouldNotResolveHost,</li>
+<li>LoaderErrorLayerCouldNotConnect,</li>
+<li>LoaderErrorLayerWriteError,</li>
+<li>LoaderErrorLayerOperationTimedout,</li>
+<li>LoaderErrorLayerSendError,</li>
+<li>LoaderErrorLayerRecvError,</li>
+<li>LoaderErrorLayerUnknown,</li>
+<li>LoaderErrorResourceHttpClient = 300,</li>
+<li>LoaderErrorResourceHttpServer,</li>
+<li>LoaderErrorResourceParsing,</li>
+<li>LoaderErrorResourceCouldNotResolveHost,</li>
+<li>LoaderErrorResourceCouldNotConnect,</li>
+<li>LoaderErrorResourceWriteError,</li>
+<li>LoaderErrorResourceOperationTimedout,</li>
+<li>LoaderErrorResourceSendError,</li>
+<li>LoaderErrorResourceRecvError,</li>
+<li>LoaderErrorResourceUnknown,</li>
+<li>LoaderErrorStyleHttpClient = 400,</li>
+<li>LoaderErrorStyleHttpServer,</li>
+<li>LoaderErrorStyleParsing,</li>
+<li>LoaderErrorStyleCouldNotResolveHost,</li>
+<li>LoaderErrorStyleCouldNotConnect,</li>
+<li>LoaderErrorStyleWriteError,</li>
+<li>LoaderErrorStyleOperationTimedout,</li>
+<li>LoaderErrorStyleSendError,</li>
+<li>LoaderErrorStyleRecvError,</li>
+<li>LoaderErrorStyleUnknown,</li>
+<li>LoaderErrorUnknown = 1000</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMConfigurationLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Tmap Mobility. All rights reserved. Updated: 2021-04-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
