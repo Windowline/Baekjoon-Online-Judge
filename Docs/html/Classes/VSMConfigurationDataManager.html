@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>VSMConfigurationDataManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Tmap VSM SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tmap Mobility</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/setActiveConfigurationData:changedCallback:">+ setActiveConfigurationData:changedCallback:</option>
+		
+		<option value="//api/name/stageConfigurationData:">+ stageConfigurationData:</option>
+		
+		<option value="//api/name/unstageConfigurationData:">+ unstageConfigurationData:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">VSMConfigurationDataManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>VSMConfigurationDataManager.h<br />VSMConfigurationDataManager.mm</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>VSMConfiguration를 관리하기 위한 클래스</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/stageConfigurationData:" title="stageConfigurationData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stageConfigurationData:">+&nbsp;stageConfigurationData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>VSM 엔진은 특정 Resource에 대해 등록된 <a href="../Classes/VSMConfiguration.html">VSMConfiguration</a> 중 최신의 것을 사용할 수 있습니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)stageConfigurationData:(VSMConfiguration *)<em>configuration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>Stage할 ConfigurationData</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMConfigurationDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unstageConfigurationData:" title="unstageConfigurationData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unstageConfigurationData:">+&nbsp;unstageConfigurationData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>등록된 <a href="../Classes/VSMConfiguration.html">VSMConfiguration</a> 를 해제합니다. <b><i>정상적인 메모리 반환을 위해 등록 해제 필요합니다.</i></b></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unstageConfigurationData:(VSMConfiguration *)<em>configuration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>Unstage할 ConfigurationData</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMConfigurationDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setActiveConfigurationData:changedCallback:" title="setActiveConfigurationData:changedCallback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setActiveConfigurationData:changedCallback:">+&nbsp;setActiveConfigurationData:changedCallback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>주어진 VSMConfiguration 를 Active로 설정합니다. <a href="../Classes/VSMMap.html#//api/name/initEngine">[VSMMap initEngine]</a> 호출 전 반드시 필요합니다.
+Active한 <a href="../Classes/VSMConfiguration.html">VSMConfiguration</a> 변경 시 VSM 엔진은 기존 <a href="../Classes/VSMConfiguration.html">VSMConfiguration</a> 와 의존성이 있는 부분을 정리하고 새로운 <a href="../Classes/VSMConfiguration.html">VSMConfiguration</a> 을 사용하게 됩니다.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setActiveConfigurationData:(VSMConfiguration *)<em>configuration</em> changedCallback:(id&lt;VSMConfigurationChangedDelegate&gt;)<em>changedCallback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>Active로 설정할 ConfigurationData</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>changedCallback</code></th>
+						<td><p>ConfigurationData 변경에 대한 callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMConfigurationDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Tmap Mobility. All rights reserved. Updated: 2021-04-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MapDataDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Tmap VSM SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tmap Mobility</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addressTextChanged:">- addressTextChanged:</option>
+		
+		<option value="//api/name/cameraAnimationBegan">- cameraAnimationBegan</option>
+		
+		<option value="//api/name/cameraAnimationEnded">- cameraAnimationEnded</option>
+		
+		<option value="//api/name/positionChanged:">- positionChanged:</option>
+		
+		<option value="//api/name/screenCenterChanged:worldY:">- screenCenterChanged:worldY:</option>
+		
+		<option value="//api/name/userGestureBegan">- userGestureBegan</option>
+		
+		<option value="//api/name/userGestureEnded:">- userGestureEnded:</option>
+		
+		<option value="//api/name/viewAngleChanged:">- viewAngleChanged:</option>
+		
+		<option value="//api/name/viewLevelChanged:">- viewLevelChanged:</option>
+		
+		<option value="//api/name/viewTiltChanged:">- viewTiltChanged:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MapDataDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>VSMMapViewDefine.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Map View 관련 deletage</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/viewLevelChanged:" title="viewLevelChanged:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewLevelChanged:">&ndash;&nbsp;viewLevelChanged:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map View Level 변경 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)viewLevelChanged:(NSInteger)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>변경된 level</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/positionChanged:" title="positionChanged:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/positionChanged:">&ndash;&nbsp;positionChanged:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>현위치 변경 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)positionChanged:(VSMMapPoint *)<em>point</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>point</code></th>
+						<td><p>변경된 위경도 좌표</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewAngleChanged:" title="viewAngleChanged:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewAngleChanged:">&ndash;&nbsp;viewAngleChanged:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>진북 기준 Angle 변경 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)viewAngleChanged:(float)<em>angle</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>angle</code></th>
+						<td><p>변경된 Angle</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewTiltChanged:" title="viewTiltChanged:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewTiltChanged:">&ndash;&nbsp;viewTiltChanged:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tilt 변경 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)viewTiltChanged:(float)<em>tiltAngle</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tiltAngle</code></th>
+						<td><p>변경된 Tilt</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addressTextChanged:" title="addressTextChanged:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addressTextChanged:">&ndash;&nbsp;addressTextChanged:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Address 변경 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addressTextChanged:(NSString *)<em>text</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>text</code></th>
+						<td><p>변경된 주소</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/screenCenterChanged:worldY:" title="screenCenterChanged:worldY:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/screenCenterChanged:worldY:">&ndash;&nbsp;screenCenterChanged:worldY:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Screen Center 변경 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)screenCenterChanged:(NSInteger)<em>worldX</em> worldY:(NSInteger)<em>worldY</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>worldX</code></th>
+						<td><p>변경된 월드 좌표</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>worldY</code></th>
+						<td><p>변경된 월드 좌표</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraAnimationBegan" title="cameraAnimationBegan"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraAnimationBegan">&ndash;&nbsp;cameraAnimationBegan</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Api에 의한 카메라 이동 시작 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cameraAnimationBegan</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraAnimationEnded" title="cameraAnimationEnded"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraAnimationEnded">&ndash;&nbsp;cameraAnimationEnded</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Api에 의한 카메라 이동 종료 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cameraAnimationEnded</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userGestureBegan" title="userGestureBegan"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userGestureBegan">&ndash;&nbsp;userGestureBegan</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자 터치 시작 이벤트</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)userGestureBegan</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userGestureEnded:" title="userGestureEnded:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userGestureEnded:">&ndash;&nbsp;userGestureEnded:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자 터치 조작 종료 이벤트(추후 deaccelation이 발생할 수 있음)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)userGestureEnded:(BOOL)<em>cameraAnimationEnabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cameraAnimationEnabled</code></th>
+						<td><p>사용자 입력 이후 카메라 애니메이션이 작동여부</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VSMMapViewDefine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Tmap Mobility. All rights reserved. Updated: 2021-04-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
