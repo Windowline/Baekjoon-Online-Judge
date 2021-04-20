@@ -77,7 +77,7 @@ VSMLayerData 리스트
 <a name="//api/name/styleList" title="styleList"></a>
 ### styleList
 
-<a href="../Classes/VSMStyleData.html">VSMStyleData</a> 리스트
+VSMStyleData 리스트
 
 `@property (strong, nonatomic, readonly) NSArray&lt;VSMStyleData*&gt; *styleList`
 
