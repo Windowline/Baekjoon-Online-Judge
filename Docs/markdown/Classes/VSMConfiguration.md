@@ -54,7 +54,7 @@ id Application이 지정한 id 값
 <a name="//api/name/layerList" title="layerList"></a>
 ### layerList
 
-VSMLayerData 리스트
+<a href="../Classes/VSMLayerData.html">VSMLayerData</a> 리스트
 
 `@property (strong, nonatomic, readonly) NSArray&lt;VSMLayerData*&gt; *layerList`
 
@@ -77,7 +77,7 @@ VSMLayerData 리스트
 <a name="//api/name/styleList" title="styleList"></a>
 ### styleList
 
-VSMStyleData 리스트
+<a href="../Classes/VSMStyleData.html">VSMStyleData</a> 리스트
 
 `@property (strong, nonatomic, readonly) NSArray&lt;VSMStyleData*&gt; *styleList`
 
