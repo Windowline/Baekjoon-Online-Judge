@@ -1,4 +1,7 @@
 #include<stdio.h>
+//t1
+//t2
+//t3
 int main()
 {
     int sum = 0;
